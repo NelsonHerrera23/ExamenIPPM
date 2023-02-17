@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityListaContactos">
+
+
+    <Button
+        android:id="@+id/btnvolverlista"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#FDFFFD"
+        android:textSize="8sp"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:iconPadding="8dp"
+        app:iconTint="#17601A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <EditText
+        android:id="@+id/txtbuscar"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Buscar..."
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#090909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbuscar">
+
+        <ListView
+            android:id="@+id/lstContactos"
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:background="#FBF9F9"
+            android:cacheColorHint="#090909" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncompartir"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#17601A"
+        android:text="Compartir Contacto"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/btnllamar"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#17601A"
+        android:text="Llamar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#17601A"
+        android:text="Actualizar Contacto"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
+
+    <Button
+        android:id="@+id/btnimg"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#17601A"
+        android:text="Ver Imagen"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

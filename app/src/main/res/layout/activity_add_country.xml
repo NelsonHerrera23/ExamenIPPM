@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityAddCountry">
+
+    <Button
+        android:id="@+id/btnvolverpais"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#FDFFFD"
+        android:textSize="8sp"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:iconPadding="8dp"
+        app:iconTint="#17601A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/btnañadir"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#17601A"
+        android:text="Añadir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <EditText
+        android:id="@+id/txtañadirpais"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#136116"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="Ingrese nombre del Pais"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <EditText
+        android:id="@+id/txtprefijo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#136116"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="Ingrese el prefijo telefonico"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#0B0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/uthlogo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:text="Ingresar Pais"
+        android:textAlignment="center"
+        android:textColor="#C5A64B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
